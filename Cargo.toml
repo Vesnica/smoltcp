@@ -1,7 +1,7 @@
 [package]
 name = "smoltcp"
 version = "0.8.0"
-edition = "2018"
+edition = "2021"
 authors = ["whitequark <whitequark@whitequark.org>"]
 description = "A TCP/IP stack designed for bare-metal, real-time systems without a heap."
 documentation = "https://docs.rs/smoltcp/"
