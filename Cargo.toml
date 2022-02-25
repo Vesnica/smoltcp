@@ -114,3 +114,4 @@ required-features = ["std", "medium-ieee802154", "phy-raw_socket", "proto-sixlow
 
 [profile.release]
 debug = 2
+strip = "debuginfo"
