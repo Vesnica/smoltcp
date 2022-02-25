@@ -69,7 +69,7 @@ pub fn wait(fd: RawFd, duration: Option<Duration>) -> io::Result<()> {
             tv_usec: 0,
         };
         let timeout_ptr = if let Some(duration) = duration {
-            timeout.tv_sec = duration.secs() as libc::time_t;
+            timeout.tv_sec = duration.secs() as libc::c_long;
             timeout.tv_usec = (duration.millis() * 1_000) as libc::suseconds_t;
             &mut timeout as *mut _
         } else {
